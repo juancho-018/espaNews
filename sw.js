@@ -1,4 +1,4 @@
-const CACHE_NAME = 'espanews-pwa-v2';
+const CACHE_NAME = 'espanews-pwa-v3';
 const ASSETS = [
     './',
     './index.html',
@@ -14,8 +14,9 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             console.log('Cache opened');
-            // Caching local and external assets
-            return cache.addAll(ASSETS.map(url => new Request(url, { mode: 'no-cors' })));
+            // Se usa addAll estándar ya que las CDNs usadas permiten peticiones CORS.
+            // Si usamos no-cors, addAll lanza un TypeError por recibir un "Opaque Response".
+            return cache.addAll(ASSETS);
         })
     );
     self.skipWaiting();
