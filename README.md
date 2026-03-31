@@ -1,4 +1,4 @@
-# EspaNews: Entretenimiento - Documentación Técnica
+# EspaNews: Entretenimiento - Documentación Técnica del trabajo api y pwa
 
 
 # Juan Camilo Meneses Galeano 3144615
