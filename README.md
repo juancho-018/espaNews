@@ -3,7 +3,7 @@
 
 # Juan Camilo Meneses Galeano 3144615
 
-Esta aplicación es un explorador de noticias interactivo enfocado en el **Entretenimiento en España**, consumiendo datos de **The News API** (thenewsapi.com). Cumple con los requerimientos de consultar información de un país en específico utilizando múltiples endpoints y flujos de datos.
+Esta aplicación es un explorador de noticias interactivo enfocado en el **Entretenimiento en España**, consumiendo datos de **The News API** (thenewsapi.com). Cumple con los requerimientos de consultar información de un país (España) en específico utilizando múltiples endpoints y flujos de datos.
 
 ## Informe de Uso de Endpoints
 
@@ -55,7 +55,7 @@ El explorador de noticias ha sido convertido a una PWA completa y certificada.
 2. **Intercepción y Caché (`sw.js`)**: El Service Worker ("Trabajador de Servicio") guarda todos los recursos nucleares de la página (HTML, CSS, JS, Iconos). Esto permite que el marco de la página se cargue ultra rápido incluso con conexiones lentas.
 3. **Instalabilidad**: La aplicación se puede instalar como un programa nativo o un acceso directo en dispositivos Android, iOS o escritorios Windows/Mac directamente desde la barra de direcciones del navegador.
 
-> **Enlace y Pruebas**: Para poder instalar la PWA y ver la magia del WebP en tu ordenador, el navegador exige que abras el proyecto mediante un servidor local (ejemplo: `Live Server` en VSCode o ejecutando `npx serve` en tu consola) en `http://localhost:XXXX` o HTTPS. Si la abres dándole doble click, seguirá funcionando, pero el navegador no dejará presionar el botón de "Instalar la Aplicación".
+> **Enlace y Pruebas**: Para poder instalar la PWA y ver la magia del WebP en el ordenador, el navegador exige que abra el proyecto mediante un servidor local (ejemplo: `Live Server` en VSCode o ejecutando `npx serve` en la consola) en `http://127.0.0.1:5500` o HTTPS. Si la abre dándole doble click, seguirá funcionando, pero el navegador no dejará presionar el botón de "Instalar la Aplicación".
 
 ## Entregables
 
