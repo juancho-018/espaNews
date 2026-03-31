@@ -1,0 +1,22 @@
+{
+  "name": "EspaNews Entretenimiento",
+  "short_name": "EspaNews",
+  "description": "Explorador PWA de noticias de entretenimiento en España.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ]
+}

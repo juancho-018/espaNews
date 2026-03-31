@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <!-- Fondo PWA Oscuro -->
+    <rect width="512" height="512" fill="#0f172a" rx="100"/>
+    <!-- Icono Filme Lucide vectorizado estático -->
+    <g transform="scale(0.8) translate(64, 64)">
+        <path d="M128 128h256v256H128z" fill="#0f172a" stroke="#6366f1" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M128 128v256" stroke="#6366f1" stroke-width="32" stroke-linecap="round"/>
+        <path d="M384 128v256" stroke="#6366f1" stroke-width="32" stroke-linecap="round"/>
+        <path d="M128 192h256" stroke="#6366f1" stroke-width="32" stroke-linecap="round"/>
+        <path d="M128 320h256" stroke="#6366f1" stroke-width="32" stroke-linecap="round"/>
+    </g>
+</svg>

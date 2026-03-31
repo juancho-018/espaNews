@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspaNews | Entretenimiento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="author" href="Juan Camilo Meneses Galeano">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- PWA Settings -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <header class="top-nav">
+            <div class="nav-brand">
+                <i data-lucide="film" class="logo-icon"></i>
+                <h1>Espa<span>News</span> <small>Entretenimiento</small></h1>
+            </div>
+
+            <nav class="main-menu">
+                <ul>
+                    <!-- Los 6 endpoints/tipos de consulta requeridos -->
+                    <li class="menu-item active" data-type="top">
+                        <i data-lucide="trending-up"></i>
+                        <span>Top Noticias</span>
+                    </li>
+                    <li class="menu-item" data-type="all">
+                        <i data-lucide="search"></i>
+                        <span>Búsqueda</span>
+                    </li>
+                    <li class="menu-item" data-type="uuid">
+                        <i data-lucide="hash"></i>
+                        <span>Por ID (UUID)</span>
+                    </li>
+                    <li class="menu-item" data-type="similar">
+                        <i data-lucide="copy"></i>
+                        <span>Similares</span>
+                    </li>
+                    <li class="menu-item" data-type="date">
+                        <i data-lucide="calendar"></i>
+                        <span>Por Fecha</span>
+                    </li>
+                    <li class="menu-item" data-type="language">
+                        <i data-lucide="languages"></i>
+                        <span>Por Idioma</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="country-badge">
+                    <img src="https://flagcdn.com/w40/es.png" alt="España" title="Resultados de España" />
+                    <span>España (ES)</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-view-header">
+                <div class="header-info">
+                    <h2 id="current-view-title">Top Noticias</h2>
+                    <p id="current-view-desc">Lo más destacado del entretenimiento en España hoy.</p>
+                </div>
+                
+                <!-- Aquí se inyectan los inputs dinámicos de cada consulta -->
+                <div id="dynamic-controls" class="controls">
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <section id="news-grid" class="news-grid">
+                <!-- Cards will be injected here -->
+                <div class="skeleton-container">
+                    <!-- Skeleton loaders placeholder -->
+                </div>
+            </section>
+
+            <!-- Status Indicator -->
+            <div id="status-message" class="status-message hidden"></div>
+        </main>
+    </div>
+    <footer>
+        <p>Creado por Juan Camilo Meneses Galeano</p>
+        <p>Todos los derechos reservados</p>
+        <p>2026</p>
+        <p>The News API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
